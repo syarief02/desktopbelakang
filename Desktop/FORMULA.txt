@@ -1,0 +1,5 @@
+=IF('[Borang peluluhan.xlsx]Form'!$F$2>0,
+    IF(AND('[Borang peluluhan.xlsx]Form'!$F$2>0, '[Borang peluluhan.xlsx]Form'!$F$3>0),
+       "A: " & TEXT('[Borang peluluhan.xlsx]Form'!$F$2, "0.000") & "     B: " & TEXT('[Borang peluluhan.xlsx]Form'!$F$3, "0.000"),
+       TEXT('[Borang peluluhan.xlsx]Form'!$F$2, "0.000")),
+    "")
